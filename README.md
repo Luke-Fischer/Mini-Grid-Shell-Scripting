@@ -8,6 +8,9 @@ Run ./server.sh
 Add jobs: ./jobSubmit "your job"
 
 # Jobs
+
+jobSubmit.sh adds jobs to the server's FIFO
+
 Jobs can be:     
 - any system command (i.e ls)
     - the server sends this command to a worker to execute
