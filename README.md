@@ -22,7 +22,7 @@ Jobs can be:
     - server sends a shutdown signal to each worker and waits for them to terminate before terminating itself
 
 # Jobs are to be distributed in round-robin order
-This means that if there are 12 workers and 25 jobs, worker 1 will complete jobs (1, 13, 25). If job 1 is still busy when the server receives the 13th job from jobSubmit, the server waits and adds the jobs into an internal queue to ensure that worker 1 completes job 13. Once worker one is available the server then sends it the 13th job stored in the internal queue. 
+This means that if there are 12 workers and 25 jobs, worker 1 will complete jobs (1, 13, 25). If job 1 is still busy when the server receives the 13th job from jobSubmit, the server waits and adds the jobs into an internal queue to ensure that worker 1 completes job 13. Once worker 1 is available the server then sends it the 13th job stored in the internal queue. 
 
 # Communication
 Server FIFO - jobSubmit.sh adds jobs to the FIFO and each worker sends signals to this FIFO indicating it is done its job and ready for a new one
