@@ -16,8 +16,8 @@ Jobs can be:
     - the server sends this command to a worker to execute
 - status
     - the server reports the status of the workers and jobs completed
-           - which workers are busy/available
-           - How many jobs a worker has completed
+        - which workers are busy/available
+        - How many jobs a worker has completed
 - shutdown
     - server sends a shutdown signal to each worker and waits for them to terminate before terminating itself
 
