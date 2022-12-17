@@ -7,6 +7,8 @@ Run ./server.sh
 
 Add jobs: ./jobSubmit "your job"
 
+number of workers = number of cores avaialable on your machine
+
 # Jobs
 
 jobSubmit.sh adds jobs to the server's FIFO
