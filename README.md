@@ -26,6 +26,7 @@ This means that if there are 12 workers and 25 jobs, worker 1 will complete jobs
 
 # Communication
 Server FIFO - jobSubmit.sh adds jobs to the FIFO and each worker sends signals to this FIFO indicating it is done its job and ready for a new one
+
 Worker FIFO's - Each worker has its own FIFO that the server uses to send the workers jobs
 
 # Output
